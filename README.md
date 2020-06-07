@@ -19,7 +19,7 @@ Custom image based on Debian, to contain all the resources to execute a good pip
 * ssh / openssh-client
 
 ---
-* Hub Docker: [See Now](https://hub.docker.com/repository/docker/linuxsolutions/server-web-nginx-php-fpm)
+* Hub Docker: [See Now](https://hub.docker.com/r/linuxsolutions/deploy)
 * GitHub Repository: [See Now](https://github.com/Open-Linux-Solutions/deploy)
 * Project website: [See Now](https://linuxsolutions.xyz/image-deploy)
 ---
