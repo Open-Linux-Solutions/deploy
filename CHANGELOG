@@ -10,3 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - NODEJS
 - COMPOSER
 - WP CLI
+
+## [1.0.1] - Jun, 07, 2020
+### Added
+- ssh / openssh-client

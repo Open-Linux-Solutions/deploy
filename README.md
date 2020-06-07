@@ -16,6 +16,7 @@ Custom image based on Debian, to contain all the resources to execute a good pip
 * zip and unzip
 * MySQl Client
 * python-pip
+* ssh / openssh-client
 
 ---
 * Hub Docker: [See Now](https://hub.docker.com/repository/docker/linuxsolutions/server-web-nginx-php-fpm)

@@ -24,7 +24,9 @@ RUN apt-get install --no-install-recommends --no-install-suggests -q -y \
     unzip \
     python-pip \
     python-setuptools \
-    mariadb-client
+    mariadb-client \
+    ssh \
+    openssh-client
 
 # Prepare install PHP
 RUN wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg \
