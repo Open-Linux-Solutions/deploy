@@ -1,8 +1,8 @@
-FROM debian:buster
+FROM debian:buster-slim
 
 LABEL maintainer="Jônatan Gouveia jonatan@linuxsolutions.xyz"
 
-LABEL version="1.0.0"
+LABEL version="1.0.2"
 
 LABEL company="Linux Solutions."
 
@@ -22,7 +22,7 @@ RUN apt-get install --no-install-recommends --no-install-suggests -q -y \
     rsync \
     zip \
     unzip \
-    python-pip \
+    python3-pip \
     python-setuptools \
     mariadb-client \
     ssh \
@@ -30,8 +30,8 @@ RUN apt-get install --no-install-recommends --no-install-suggests -q -y \
 
 # Prepare install PHP
 RUN wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg \
-    && echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/php.list \
-    && apt-get update
+    && sh -c 'echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/php.list' \
+    && apt-get -y update
 
 # Install PHP
 RUN apt-get install --no-install-recommends --no-install-suggests -q -y \

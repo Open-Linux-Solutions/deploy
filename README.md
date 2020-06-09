@@ -1,5 +1,5 @@
 # Deploy
-Custom image based on Debian, to contain all the resources to execute a good pipeline of your projects.
+Custom image based on Debian Buster Slim, to contain all the resources to execute a good pipeline of your projects.
 
 ### Resources 
 
@@ -15,7 +15,7 @@ Custom image based on Debian, to contain all the resources to execute a good pip
 * rsync
 * zip and unzip
 * MySQl Client
-* python-pip
+* python3-pip
 * ssh / openssh-client
 
 ---
