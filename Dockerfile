@@ -1,13 +1,13 @@
 FROM debian:buster-slim
 
-LABEL maintainer="Jônatan Gouveia jonatan@linuxsolutions.xyz"
+LABEL maintainer="Jônatan Gouveia jonatan@fuerzastudio.com.br"
 
-LABEL version="1.0.2"
+LABEL version="1.0.3"
 
-LABEL company="Linux Solutions."
+LABEL company="Fuerza Studio"
 
 ENV COMPOSER_VERSION 1.10.7
-ARG NODE_SETUP="setup_14.x"
+ARG NODE_SETUP="setup_16.x"
 
 #Prepare Image
 RUN apt-get update \
